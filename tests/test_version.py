@@ -1,5 +1,5 @@
 from validate_version_code import validate_version_code
-from ding.__version__ import __version__
+from ringbell.__version__ import __version__
 
 
 def test_version():

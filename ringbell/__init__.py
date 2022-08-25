@@ -1,7 +1,7 @@
 """Module providing tools to make a sound."""
 from support_developer import support_luca
-from .ding import Ding
+from .ringbell import RingBell
 
-support_luca("ding")
+support_luca("ringbell")
 
-__all__ = ["Ding"]
+__all__ = ["RingBell"]

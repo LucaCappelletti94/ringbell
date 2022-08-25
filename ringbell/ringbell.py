@@ -6,23 +6,23 @@ from .utils import InvisibleAudio
 from userinput.utils import must_be_in_set
 import simpleaudio
 
-__all__ = ["Ding"]
+__all__ = ["RingBell"]
 
 
-class Ding:
+class RingBell:
 
     def __init__(
         self,
         sample: str = "microwave",
         verbose: bool = True
     ):
-        """Create a new Ding.
+        """Create a new RingBell.
 
         Parameters
         ------------------------------------------
         sample: str = "microwave"
             Name of one of the available samples.
-            Currently available are 'bojack', 'pink_guy', 'rick', 'whale' and 'ding'.
+            Currently available are 'bojack', 'pink_guy', 'rick', 'whale' and 'microwave'.
             Use 'random' for choosing a random sample.
             If the provided element is not in the set, we will check for
             a possible path.

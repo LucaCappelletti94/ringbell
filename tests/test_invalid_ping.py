@@ -1,13 +1,13 @@
-from ding import Ding
+from ringbell import RingBell
 import pytest
 
 
-def test_ding():
-    d = Ding()
+def test_ringbell():
+    d = RingBell()
     with pytest.raises(ValueError):
-        Ding(sample="kebab")
+        RingBell(sample="kebab")
     with pytest.raises(ValueError):
-        Ding(sample="kebab")
+        RingBell(sample="kebab")
     with pytest.raises(ValueError):
-        Ding(sample="tests/test_invalid_ding.py")
-    Ding(sample=d._path)
+        RingBell(sample="tests/test_invalid_RingBell.py")
+    RingBell(sample=d._path)

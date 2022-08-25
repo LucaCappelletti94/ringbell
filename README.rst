@@ -1,4 +1,4 @@
-Ding
+Ring Bell
 =========================================================================================
 |pip| |downloads|
 
@@ -18,7 +18,7 @@ Finally as usual, just download it using pip:
 
 .. code:: shell
 
-    pip install ding
+    pip install ringbell
 
 
 Usage examples
@@ -27,32 +27,32 @@ It's quite trivia, really, just go:
 
 .. code:: python
 
-    from ding import Ding
+    from ringbell import RingBell
 
     def my_long_task():
         # Do stuf...
 
         # And when it is finished...
-        Ding()
+        RingBell()
 
 
 What abount a custom sound? Just pass it as an argument.
 
 .. code:: python
 
-    from ding import Ding
+    from ringbell import RingBell
 
     def my_long_task():
         # Do stuf...
 
         # And when it is finished...
-        Ding(path="my_custom_sound.mp3")
+        RingBell(path="my_custom_sound.mp3")
 
 
-.. |pip| image:: https://badge.fury.io/py/ding.svg
-    :target: https://badge.fury.io/py/ding
+.. |pip| image:: https://badge.fury.io/py/ringbell.svg
+    :target: https://badge.fury.io/py/ringbell
     :alt: Pypi project
 
-.. |downloads| image:: https://pepy.tech/badge/ding
-    :target: https://pepy.tech/badge/ding
+.. |downloads| image:: https://pepy.tech/badge/ringbell
+    :target: https://pepy.tech/badge/ringbell
     :alt: Pypi total project downloads 
