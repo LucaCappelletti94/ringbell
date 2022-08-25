@@ -49,6 +49,8 @@ setup(
     install_requires=[
         "simpleaudio",
         "jupyter",
+        "userinput",
+        "support_developer",
         "environments_utils"
     ],
 )
