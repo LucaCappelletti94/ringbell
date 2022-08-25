@@ -26,14 +26,14 @@ def find_version(*file_paths):
     raise RuntimeError("Unable to find version string.")
 
 
-__version__ = find_version("ding", "__version__.py")
+__version__ = find_version("ringbell", "__version__.py")
 
 setup(
-    name='ding',
+    name='ringbell',
     version=__version__,
     description="Python package to play a sound when a task completes.",
     long_description=long_description,
-    url="https://github.com/LucaCappelletti94/ding",
+    url="https://github.com/LucaCappelletti94/ringbell",
     author="Luca Cappelletti",
     author_email="cappelletti.luca94@gmail.com",
     # Choose your license
