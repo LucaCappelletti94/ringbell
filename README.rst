@@ -24,7 +24,7 @@ Finally as usual, just download it using pip:
 Support my work ❤️
 ------------------------------------------------------
 If you have enjoyed my work, and possibly it has saved you some precious minutes,
-please do consider `❤️❤️ supporting me on GitHub ❤️❤️ <https://github.com/sponsors/LucaCappelletti94>`_
+please do consider `supporting me on GitHub ❤️ <https://github.com/sponsors/LucaCappelletti94>`_
 
 
 Integration with exceptions and Jupyter Notebooks
