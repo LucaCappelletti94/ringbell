@@ -21,7 +21,7 @@ Finally as usual, just download it using pip:
     pip install ringbell
 
 
-Support my work
+Support my work ❤️
 ------------------------------------------------------
 If you have enjoyed my work, and possibly it has saved you some precious minutes,
 please do consider `❤️❤️ supporting me on GitHub ❤️❤️ <https://github.com/sponsors/LucaCappelletti94>`_
