@@ -5,7 +5,9 @@ from .ringbell import RingBell
 
 def auto_ringbell(
     minimum_execution_time: int = 60,
-    only_exceptions: bool = False
+    only_exceptions: bool = False,
+    good_sound: str = "positive_notification",
+    bad_sound: str = "wrong_answer",
 ):
     """Plays good or bad sound when the execution takes more than `minimum_execution_time` seconds.
     
@@ -16,19 +18,23 @@ def auto_ringbell(
         the ringbell.
     only_exceptions: bool = False
         Whether to play sound only for exceptions.
+    good_sound: str = "positive_notification"
+        The sound to play when execution is nominal.
+    bad_sound: str = "wrong_answer"
+        The sound to play when execution goes wrong.
     """
 
     def play_bad_sound():
         """Plays the bad sound when exceptions happen."""
         RingBell(
-            sample="wrong_answer",
+            sample=bad_sound,
             minimum_execution_time=minimum_execution_time,
         ).play()
 
     def play_good_sound():
         """Plays the good sound when execution completes successfully."""
         RingBell(
-            sample="positive_notification",
+            sample=good_sound,
             minimum_execution_time=minimum_execution_time,
             verbose= not only_exceptions
         ).play()

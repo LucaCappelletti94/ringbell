@@ -77,7 +77,9 @@ You can also customize the time interval as such:
     from ringbell import auto_ringbell
     auto_ringbell(
         minimum_execution_time = 60,
-        only_exceptions = False
+        only_exceptions = False,
+        good_sound="sample_for_nominal_execution",
+        bad_sound="sample_for_exceptions"
     )
 
 
@@ -93,7 +95,11 @@ It's quite trivia, really, just go:
         # Do stuf...
 
         # And when it is finished...
-        RingBell()
+        RingBell(
+            sample = "microwave",
+            minimum_execution_time = 0,
+            verbose = True
+        )
 
 
 How many sounds are there? Well, just list them:

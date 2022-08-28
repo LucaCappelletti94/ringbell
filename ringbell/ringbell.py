@@ -26,7 +26,8 @@ class RingBell:
         ------------------------------------------
         sample: str = "microwave"
             Name of one of the available samples.
-            Currently available are 'bojack', 'pink_guy', 'rick', 'whale' and 'microwave'.
+            Use the `RingBell.available_samples()` method
+            to get a comprehensive list of the available sounds.
             Use 'random' for choosing a random sample.
             If the provided element is not in the set, we will check for
             a possible path.
